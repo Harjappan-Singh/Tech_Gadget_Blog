@@ -1,12 +1,28 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="background-image grid grid-cols-1 m-auto">
+{{-- FF1675 --}}
+
+    <div class="container backgroundHome">
+        <h2>Hello, What Do You Want To Read?</h2>
+        <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+        </div>
+    </div>
+
+    
+     {{-- <div class="background-image grid grid-cols-1 m-auto">
         <div class="flex text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
-                <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
-                    Do you want to become a developer?
+                 <h2 h1 class="sm:text-gray text-2xl font-bold text-shadow-md pb-14">
+              There are 50k+ websites out there to learn know about new in tech.
+                </h2> 
+                <h1 class="sm:text-white text-5xl font-bold text-shadow-md pb-14">
+                      But you only need a handful to crsuh it.
+                Find the best here:
                 </h1>
+               
                 <a 
                     href="/blog"
                     class="text-center bg-gray-50 text-gray-700 py-2 px-4 font-bold text-xl uppercase">
@@ -14,8 +30,10 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> --}}
 
+
+    {{--
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
             <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" width="700" alt="">
@@ -96,5 +114,5 @@
         <div>
             <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
         </div>
-    </div>
+    </div> --}}
 @endsection
