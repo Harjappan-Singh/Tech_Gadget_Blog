@@ -16,17 +16,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
     <!-- Styles -->
-    <link href="{{ ('css/app.css') }}" rel="stylesheet">
+    
+    {{-- <link href="{{ ('css/app.css') }}" rel="stylesheet"> --}}
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url('css/homePage.css') }}">
 </head>
-<body class="bg-gray-100 h-screen antialiased leading-none font-sans">
+<body>
     <div id="app">
-        <header class="bg-gray-800 py-6">
+         {{--  <header class="bg-gray-800 py-6">
             <div class="container mx-auto flex justify-between items-center px-6">
                 <div>        
                     <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
                         TechTrek
-                        {{-- {{ config('app.name', 'Tech') }} --}}
+                        {{-- {{ config('app.name', 'Tech') }}
                     </a>
                 </div>
                 <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
@@ -50,8 +53,12 @@
                     @endguest
                 </nav>
             </div>
-        </header>
+        </header>--}}
 
+         <div>
+            @include('layouts.header')
+        </div>
+     
         <div>
             @yield('content')
         </div>

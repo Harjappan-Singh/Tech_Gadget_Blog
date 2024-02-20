@@ -13,3 +13,11 @@
     background-size: cover;
     height: 600px;
 } */
+
+.section1 {
+    display: flex;
+}
+
+body {
+    background-color: red;
+}
