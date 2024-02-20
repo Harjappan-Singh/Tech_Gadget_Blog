@@ -4,51 +4,45 @@
 {{-- FF1675 --}}
 
    
+<div class="section text-light p-5 text-center myContainer">
     <div class="container">
-        <div class="inputTrendingBox">
-            <h2>Hello, What Do You Want To Read?</h2>
-            <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="new updgrade in java" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <div class="content">
+                <h2> Hello,
+                    <span class="cText">What Would You Like To Read?</span>
+                     </h2>
+                <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="new updgrade in java" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                 <div class="suggestion">
+                    <span>New update in ios</span>
+                    <span>whats new in bootstrap</span>
+                    <span>Why learn data science</span>
+                </div>
+                </div>
             </div>
-            <div class="suggestion">
-                <span>New update in ios</span>
-                <span>whats new in bootstrap</span>
-                <span>Why you should learn data science</span>
-            </div>
+             <img class="img-fluid w-50 d-none d-sm-block" src="home.svg" alt="">
         </div>
-        
-        <section class="postCards">
-            <div class="card" style="width: 18rem;">
-            <img src="https://developer.apple.com/news/images/og/ios-17-og.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">New Upgrade in IOS</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-            <img src="https://developer.apple.com/news/images/og/ios-17-og.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">New Upgrade in IOS</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-            <img src="https://developer.apple.com/news/images/og/ios-17-og.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">New Upgrade in IOS</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-            </div>
-        </section>
+    </div>
+</div>
 
+<section class="text-light p-5 m-5 section1">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Sign Up For Our Blog List</h3>
 
-        <section class="section2">
-            <h2>Featured Blogs</h2>
-            <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="input-group news-input">
+            <input type="text" class="form-control" placeholder="Enter Email" />
+            <button class="btn btn-dark btn-lg" type="button">Submit</button>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section class="section2">
+            <div class="container">
+                <h2 class="text-light">Featured Blogs</h2>
+                <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -86,11 +80,104 @@
                 <span class="visually-hidden">Next</span>
             </button>
             </div>
-        </section>
-    </div>
+            </div>
+            
+    </section>
 
+<section id="instructors" class="p-5">
+      <div class="container">
+        <h2 class="text-center text-white">Our Writers</h2>
+        <p class="lead text-center text-white mb-5">
+          Our instructors all have 5+ years working as a writer in the
+          industry
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/11.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">John Doe</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
 
-  
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/11.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Jane Doe</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Steve Smith</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/12.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Sara Smith</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
     
      {{-- <div class="background-image grid grid-cols-1 m-auto">
         <div class="flex text-gray-100 pt-10">

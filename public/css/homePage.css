@@ -1,11 +1,14 @@
 .postCards {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .inputTrendingBox {
     border: solid black 1px;
     padding: 10%;
     border-radius: 2px;
+    margin: 40px;
 }
 
 .suggestion span {
@@ -13,4 +16,43 @@
     margin: 8px;
     padding: 3px;
     border-radius: 2px;
+}
+
+.myNavBar {
+    background-color: #020024;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        113deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(231, 0, 94, 1) 86%
+    );
+}
+
+.myContainer {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.content {
+    margin-right: 5%;
+}
+
+.content .cText {
+    color: #e7005e;
+}
+/* #e7005e */
+/* #020024 */
+.section1 {
+    background-color: #020024d1;
+}
+
+.section2 {
+    margin: 10%;
+}
+
+.myFooter {
+    background-color: #020024d1;
 }
