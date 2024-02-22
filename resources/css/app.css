@@ -1,23 +1,67 @@
-/* @import "tailwindcss/base";
+@import "tailwindcss/base";
 
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
 
-.background-image {
-    background-image: url("https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-600nw-1029506242.jpg");
-    background-color: #ff1675;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 600px;
-} */
-
-.section1 {
+/* .postCards {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.inputTrendingBox {
+    border: solid black 1px;
+    padding: 10%;
+    border-radius: 2px;
+    margin: 40px;
+}
+
+.suggestion span {
+    border: solid black 1px;
+    margin: 8px;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+
+*/
 
 body {
-    background-color: red;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        113deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(231, 0, 94, 1) 86%
+    );
 }
+
+.myNavBar {
+    background-color: #020024;
+}
+
+/*
+.myContainer {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.content {
+    margin-right: 5%;
+}
+
+.content .cText {
+    color: #e7005e;
+}
+
+.section1 {
+    background-color: #020024d1;
+}
+
+ .section2 {
+    margin: 10%;
+} 
+
+.myFooter {
+    background-color: #020024d1;
+} */
