@@ -4,11 +4,11 @@
 <div class="w-4/5 m-auto text-left">
     <div class="py-15">
         <h1 class="text-6xl">
-            Update Post
+            Create Post
         </h1>
     </div>
 </div>
-
+ 
 @if ($errors->any())
     <div class="w-4/5 m-auto">
         <ul>
@@ -23,38 +23,37 @@
 
 <div class="w-4/5 m-auto pt-20">
     <form 
-        action="/tech-blog/{{ $post->slug }}"
+        action="/tech-blog"
         method="POST"
         enctype="multipart/form-data">
         @csrf
-        @method('PUT')
 
         <input 
             type="text"
             name="title"
-            value="{{ $post->title }}"
+            placeholder="Title..."
             class="bg-transparent block border-b-2 w-full h-20 text-6xl outline-none">
 
         <textarea 
             name="description"
             placeholder="Description..."
-            class="py-20 bg-transparent block border-b-2 w-full h-60 text-xl outline-none">{{ $post->description }}</textarea> 
+            class="py-20 bg-transparent block border-b-2 w-full h-60 text-xl outline-none"></textarea>
 
         <textarea 
             name="content"
             placeholder="Content..."
-            class="py-20 bg-transparent block border-b-2 w-full h-60 text-xl outline-none">{{ $post->content }}</textarea> 
+            class="py-20 bg-transparent block border-b-2 w-full h-60 text-xl outline-none"></textarea>
 
         <input 
             type="text"
             name="category"
-            value="{{ $post->category }}"
+            placeholder="Category..."
             class="bg-transparent block border-b-2 w-full h-20 text-xl outline-none">
 
         <input 
             type="text"
             name="tags"
-            value="{{ $post->tags }}"
+            placeholder="Tags (optional)..."
             class="bg-transparent block border-b-2 w-full h-20 text-xl outline-none">
 
         <div class="bg-grey-lighter pt-15">

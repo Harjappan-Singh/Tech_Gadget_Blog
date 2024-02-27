@@ -23,7 +23,7 @@
 
 <div class="w-4/5 m-auto pt-20">
     <form 
-        action="/tech-blog/{{ $post->slug }}"
+        action="/blog/{{ $post->slug }}"
         method="POST"
         enctype="multipart/form-data">
         @csrf
@@ -39,35 +39,6 @@
             name="description"
             placeholder="Description..."
             class="py-20 bg-transparent block border-b-2 w-full h-60 text-xl outline-none">{{ $post->description }}</textarea> 
-
-        <textarea 
-            name="content"
-            placeholder="Content..."
-            class="py-20 bg-transparent block border-b-2 w-full h-60 text-xl outline-none">{{ $post->content }}</textarea> 
-
-        <input 
-            type="text"
-            name="category"
-            value="{{ $post->category }}"
-            class="bg-transparent block border-b-2 w-full h-20 text-xl outline-none">
-
-        <input 
-            type="text"
-            name="tags"
-            value="{{ $post->tags }}"
-            class="bg-transparent block border-b-2 w-full h-20 text-xl outline-none">
-
-        <div class="bg-grey-lighter pt-15">
-            <label class="w-44 flex flex-col items-center px-2 py-3 bg-white-rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer">
-                <span class="mt-2 text-base leading-normal">
-                    Select an image
-                </span>
-                <input 
-                    type="file"
-                    name="image"
-                    class="hidden">
-            </label>
-        </div>
 
         <button    
             type="submit"
